@@ -20,7 +20,7 @@ body {
     background-color: #ffffff;
     padding: 20px;
     border-radius: 0 0 15px 15px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    /*box-shadow: 0 4px 10px rgba(0,0,0,0.05);*/
 }
 
 #hero .logo {
@@ -36,7 +36,8 @@ body {
 
 #hero h2{
     font-size: 1.6rem;
-    color: #84B067;
+    /*color: #84B067;*/
+    color: #629045;
     margin-bottom: 10px;
 }
 
@@ -58,7 +59,7 @@ body {
     border-radius: 8px;
     margin-bottom: 15px;
     border-left: 5px solid #F3C300; /* Dourado */
-    box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    /*box-shadow: 0 2px 8px rgba(0,0,0,0.08);*/
 }
 
 .accordion-header {
@@ -115,11 +116,11 @@ body {
     padding: 16px;
     text-decoration: none;
     border-radius: 8px;
-    font-weight: bold;
-    font-size: 1.1rem;
+    /*font-weight: bold;*/
+    font-size: 1.4rem;
     margin-top: 20px;
-    text-transform: uppercase;
-    box-shadow: 0 4px 6px rgba(0, 92, 41, 0.3);
+    /*text-transform: uppercase;*/
+    /*box-shadow: 0 4px 6px rgba(0, 92, 41, 0.3);*/
     transition: background-color 0.3s ease;
 }
 
