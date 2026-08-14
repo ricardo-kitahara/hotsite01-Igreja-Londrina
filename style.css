@@ -236,7 +236,10 @@ li.no-bullet {
   margin-left: 20px; /* Cria o espaço para os pontinhos aparecerem */
 }
 .left4 {
-  margin-left: 40px; /* Cria o espaço para os pontinhos aparecerem */
+  margin-left: 80px; /* Cria o espaço para os pontinhos aparecerem */
+}
+.left8 {
+  margin-left: 150px; /* Cria o espaço para os pontinhos aparecerem */
 }
 
 
