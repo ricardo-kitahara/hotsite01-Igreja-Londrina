@@ -235,6 +235,9 @@ li.no-bullet {
 .left2 {
   margin-left: 20px; /* Cria o espaço para os pontinhos aparecerem */
 }
+.left3 {
+  margin-left: 40px; /* Cria o espaço para os pontinhos aparecerem */
+}
 .left4 {
   margin-left: 80px; /* Cria o espaço para os pontinhos aparecerem */
 }
@@ -261,7 +264,7 @@ li.no-bullet {
   width: 100%;
 }
 .img2{
-  width: 120%;
+  width: 110%;
 }
 
 @font-face {
