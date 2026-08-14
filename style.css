@@ -231,14 +231,14 @@ footer {
 
 /* Estilo para a imagem dentro dos cards */
 .imagem-container {
-    width: 70%;
+    width: 80%;
     margin-bottom: 12px;
     display: flex;
     justify-content: flex-end;
 }
 
 .imagem-container img {
-    max-width: 80%; /* Garante que a foto nunca ultrapasse o limite do celular */
+    max-width: 100%; /* Garante que a foto nunca ultrapasse o limite do celular */
     height: auto;    /* Mantém a proporção da foto sem achatar */
     border-radius: 8px; /* Arredonda as pontas para combinar com o seu layout */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
