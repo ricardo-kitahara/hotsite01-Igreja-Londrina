@@ -232,8 +232,11 @@ footer {
 li.no-bullet {
   list-style: none;
 }
-.left {
+.left2 {
   margin-left: 20px; /* Cria o espaço para os pontinhos aparecerem */
+}
+.left4 {
+  margin-left: 40px; /* Cria o espaço para os pontinhos aparecerem */
 }
 
 
