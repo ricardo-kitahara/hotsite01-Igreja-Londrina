@@ -6,7 +6,7 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: Ottawa;
     line-height: 1.6;
     color: #333333;
     background-color: #F8F9FA;
@@ -229,6 +229,17 @@ footer {
     padding-left: 5px;
 }
 
+li.no-bullet {
+    list-style: none;
+}
+.left {
+    margin-left: 20px; /* Cria o espaço para os pontinhos aparecerem */
+}
+.left-4 {
+    margin-left: 80px; /* Cria o espaço para os pontinhos aparecerem */
+}
+
+
 /* Estilo para a imagem dentro dos cards */
 .imagem-container {
     width: 80%;
@@ -238,8 +249,16 @@ footer {
 }
 
 .imagem-container img {
-    max-width: 100%; /* Garante que a foto nunca ultrapasse o limite do celular */
+    max-width: 90%; /* Garante que a foto nunca ultrapasse o limite do celular */
     height: auto;    /* Mantém a proporção da foto sem achatar */
     border-radius: 8px; /* Arredonda as pontas para combinar com o seu layout */
     box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
+}
+
+@font-face {
+  font-family: 'Ottawa';
+  src: url('font/ottawa.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
 }
