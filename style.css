@@ -82,6 +82,10 @@ body {
   font-size: 1.5rem;
   font-weight: normal;
 }
+.accordion-header:hover {
+  /*color: #84B067;*/
+  background-color: #ecf9ef;
+}
 
 /* Animação do Acordeão */
 .texto-resumo {
@@ -257,35 +261,33 @@ li.no-bullet {
 
 /* --- 📱 Smartphone Default Styles --- */
 /* For screens smaller than 768px (Phones) */
-.hero-image {
-  width: 85%;       /* Image takes the full width of the mobile screen */
-  max-width: 250px;     /* Impede que passe de 400px em celulares grandes */
-  height: auto;         /* Mantém a proporção e não distorce a foto */
-  object-fit: cover; /* Prevents distortion by cropping nicely */
-}
-/* --- 💻 PC / Desktop Screen Styles --- */
-/* For screens 1024px and wider */
-@media screen and (min-width: 1024px) {
-  .hero-image {
-    width: 75%;       /* Image takes up only half the screen on PC */
-    max-width: 600px; /* Define um limite máximo elegante para telas grandes */
-    object-fit: cover; /* Prevents distortion by cropping nicely */
-  }
-}
 
 /* Estilo para a imagem dentro dos cards */
 .imagem-container {
-  width: 85%;
+  width: 85%; /* Image takes the full width of the mobile screen */
+  max-width: 250px; /* Impede que passe de 400px em celulares grandes */
+  height: auto; /* Mantém a proporção e não distorce a foto */
   margin-bottom: 12px;
   display: flex;
   justify-content: flex-start;
+  object-fit: cover; /* Prevents distortion by cropping nicely */
 }
 
 .imagem-container img {
   max-width: 85%; /* Garante que a foto nunca ultrapasse o limite do celular */
-  height: auto;    /* Mantém a proporção da foto sem achatar */
+  height: auto; /* Mantém a proporção da foto sem achatar */
   border-radius: 8px; /* Arredonda as pontas para combinar com o seu layout */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
+}
+
+/* --- 💻 PC / Desktop Screen Styles --- */
+/* For screens 1024px and wider */
+@media screen and (min-width: 1024px) {
+  .imagem-container {
+    width: 75%;       /* Image takes up only half the screen on PC */
+    max-width: 600px; /* Define um limite máximo elegante para telas grandes */
+    object-fit: cover; /* Prevents distortion by cropping nicely */
+  }
 }
 
 @font-face {
