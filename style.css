@@ -5,14 +5,21 @@
   box-sizing: border-box;
 }
 
+/* 1. Global / PC Styles (default) */
 body {
   font-family: Ottawa;
+  font-size: 16px;
   line-height: 1.6;
   color: #333333;
   background-color: #F8F9FA;
   padding: 20px;
 }
-
+/* 2. Smartphone styles */
+@media screen and (max-width: 767px) {
+  body {
+    font-size: 14px;
+  }
+}
 /* Estilos do Hero (Topo App) */
 #hero {
   text-align: center;
@@ -245,6 +252,21 @@ li.no-bullet {
   margin-left: 150px; /* Cria o espaço para os pontinhos aparecerem */
 }
 
+/* --- 📱 Smartphone Default Styles --- */
+/* For screens smaller than 768px (Phones) */
+.hero-image {
+  width: 75%;       /* Image takes the full width of the mobile screen */
+  max-height: 500px; /* Limits height so it doesn't push content too far down */
+  object-fit: cover; /* Prevents distortion by cropping nicely */
+}
+/* --- 💻 PC / Desktop Screen Styles --- */
+/* For screens 1024px and wider */
+@media screen and (max-width: 767px) {
+  .hero-image {
+    width: 50%;       /* Image takes up only half the screen on PC */
+    max-height: 250px; /* Allows a taller image on large screens */
+  }
+}
 
 /* Estilo para a imagem dentro dos cards */
 .imagem-container {
