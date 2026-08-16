@@ -239,6 +239,9 @@ footer {
 li.no-bullet {
   list-style: none;
 }
+.left1 {
+  margin-left: 10px; /* Cria o espaço para os pontinhos aparecerem */
+}
 .left2 {
   margin-left: 20px; /* Cria o espaço para os pontinhos aparecerem */
 }
@@ -255,7 +258,7 @@ li.no-bullet {
 /* --- 📱 Smartphone Default Styles --- */
 /* For screens smaller than 768px (Phones) */
 .hero-image {
-  width: 80%;       /* Image takes the full width of the mobile screen */
+  width: 85%;       /* Image takes the full width of the mobile screen */
   object-fit: cover; /* Prevents distortion by cropping nicely */
 }
 /* --- 💻 PC / Desktop Screen Styles --- */
