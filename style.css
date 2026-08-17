@@ -290,42 +290,52 @@ li.no-bullet {
 }
 */
 
-/* ==========================================================================
-   1. DESKTOP STYLES (Default / Large Screens)
-   ========================================================================== */
+/* Base styles applied to all devices first */
 .image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
   width: 100%;
-  max-width: 75%;  /* Restricts width on big screens */
-  height: 50%;     /* Set tall height for desktop table cells */
-  overflow: hidden;  /* Keeps image from spilling out */
 }
 
 .image-container img {
   width: 100%;
-  height: 100%;
-  object-fit: cover; /* Keeps aspect ratio without distortion */
+  height: auto;
+  object-fit: cover;
 }
 
-/* ==========================================================================
-   2. SMARTPHONE STYLES (Mobile / Small Screens)
-   ========================================================================== */
+/* 📱 SMARTPHONE STYLES (Small screens up to 768px) */
 @media screen and (max-width: 768px) {
-  /* Forces the table layout to be responsive */
-  table, tr, td {
-    display: block;
-    width: 100%;
+  td {
+    padding: 8px; /* Compact padding for small screens */
   }
 
   .image-container {
-    width: 50%;      /* Spans full mobile width */
-    max-width: 50%;  /* Removes desktop restriction */
-    height: 250px;     /* Slightly shorter for mobile screens */
+    height: 150px; /* Shorter, mobile-friendly height */
+    max-width: 100%;
   }
 
   .image-container img {
-    width: 50%;
-    height: 50%;
-    object-fit: cover;
+    /* Ensures image fills the smaller container without distortion */
+    height: 100%;
+  }
+}
+
+/* 💻 DESKTOP STYLES (Large, tall layouts from 769px and up) */
+@media screen and (min-width: 769px) {
+  td {
+    padding: 24px; /* Generous spacing for large displays */
+  }
+
+  .image-container {
+    width: 100%;
+    max-width: 80%; /* Prevents the image from stretching too wide */
+    height: 50%;    /* Forces a large, tall portrait aspect ratio */
+  }
+
+  .image-container img {
+    height: 100%;    /* Fills the tall container completely */
   }
 }
 
