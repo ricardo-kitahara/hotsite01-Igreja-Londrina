@@ -287,7 +287,7 @@ li.no-bullet {
 /* --- Mobile Specific: Tall Images (Portrait) --- */
 @media (max-width: 767px) and (orientation: portrait) {
   .image-container img {
-    max-height: 70vh; /* Limits tall images from filling the whole screen */
+    max-height: 100vh; /* Limits tall images from filling the whole screen */
     object-fit: contain; /* Keeps the entire image visible if preferred */
   }
 }
@@ -299,7 +299,7 @@ li.no-bullet {
   }
 
   .image-container img {
-    max-height: 600px; /* Prevents standard images from blowing up too big */
+    max-height: 800px; /* Prevents standard images from blowing up too big */
   }
 }
 
@@ -307,11 +307,11 @@ li.no-bullet {
 @media (min-width: 1200px) and (min-aspect-ratio: 4/3) {
   /* Targets wide PC displays handling tall images side-by-side */
   .tall-mode {
-    max-width: 500px;
+    max-width: 600px;
   }
 
   .tall-mode img {
-    height: 80vh; /* Scales relative to screen height instead of width */
+    height: 100vh; /* Scales relative to screen height instead of width */
     width: auto;
     object-fit: contain;
   }
