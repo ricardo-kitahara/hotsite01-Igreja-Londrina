@@ -265,8 +265,8 @@ li.no-bullet {
 
 /* --- Base Styles (Mobile First) --- */
 .image-container {
-  width: 100%;
-  max-width: 100%;
+  width: 80%;
+  max-width: 80%;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -284,36 +284,19 @@ li.no-bullet {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
 }
 
-/* --- Mobile Specific: Tall Images (Portrait) --- */
-@media (max-width: 767px) and (orientation: portrait) {
-  .image-container img {
-    max-height: 100vh; /* Limits tall images from filling the whole screen */
-    object-fit: contain; /* Keeps the entire image visible if preferred */
-  }
-}
-
-/* --- Large PC Screens --- */
-@media (min-width: 1200px) {
+/* --- Desktop Styles --- */
+/* Target: Large and Tall Desktop Screens (Width 1200px+ AND Height 900px+) */
+@media screen and (min-width: 1200px) and (min-height: 800px) {
   .image-container {
-    max-width: 1200px; /* Limits container width on ultra-wide screens */
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 60vh; /* Keeps container responsive to tall heights */
   }
 
   .image-container img {
-    max-height: 800px; /* Prevents standard images from blowing up too big */
-  }
-}
-
-/* --- Large PC Screens: Tall / Vertical Images --- */
-@media (min-width: 1200px) and (min-aspect-ratio: 4/3) {
-  /* Targets wide PC displays handling tall images side-by-side */
-  .tall-mode {
-    max-width: 600px;
-  }
-
-  .tall-mode img {
-    height: 100vh; /* Scales relative to screen height instead of width */
-    width: auto;
-    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Prevents cropping on extra tall screens */
   }
 }
 
