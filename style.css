@@ -291,7 +291,7 @@ li.no-bullet {
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 960px) {
   .image-container {
     width: 100%;
     padding: 10px;
