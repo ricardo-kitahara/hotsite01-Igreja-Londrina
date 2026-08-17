@@ -265,30 +265,53 @@ li.no-bullet {
 
 /* Container scales with the screen */
 .image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 16px;
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto;
+  padding: 16px;
+}
+
+/* Images fill their slots without distorting */
+.image-container img {
+  width: 100%;
+  height: 350px; /* Fixed height forces uniformity */
+  object-fit: cover; /* Crops instead of stretching */
+  object-position: center; /* Centers the viewable area */
   border-radius: 8px; /* Arredonda as pontas para combinar com o seu layout */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
 }
 
-/* Mobile Screens (Narrow viewports) */
+/* Mobile Screens (Small devices) */
 @media (max-width: 480px) {
-  .image-container img {
+  .image-container {
     height: 300px; /* Forces uniform height on mobile */
+  }
+  .image-container img {
+    height: 100%; /* Forces image to fill the forced height */
   }
 }
 
-/* Desktop Screens (Wide viewports) */
-@media (min-width: 1024px) {
+/* Tablet Screens (Medium devices) */
+@media (min-width: 481px) and (max-width: 1024px) {
   .image-container {
-    display: flex;
-    gap: 20px;
+    height: 450px;
   }
-
   .image-container img {
-    flex: 1;
-    height: 450px; /* Keeps tall and large images aligned */
+    height: 100%;
+  }
+}
+
+/* Desktop Screens (Large devices) */
+@media (min-width: 1025px) {
+  /* Separates behavior based on image orientation if needed */
+  .image-container {
+    height: 100%;
+    display: block;
+  }
+  .image-container img {
+    height: 100%;
+    object-position: center; /* Keeps focal point in the middle */
   }
 }
 
