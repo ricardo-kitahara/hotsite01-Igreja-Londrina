@@ -263,55 +263,57 @@ li.no-bullet {
   margin-left: 150px; /* Cria o espaço para os pontinhos aparecerem */
 }
 
-/* Container scales with the screen */
+/* --- Base Styles (Mobile First) --- */
 .image-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 16px;
   width: 100%;
-  padding: 16px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Images fill their slots without distorting */
 .image-container img {
   width: 100%;
-  height: 350px; /* Fixed height forces uniformity */
-  object-fit: cover; /* Crops instead of stretching */
+  height: auto;
+  object-fit: cover; /* Prevents distortion */
   object-position: center; /* Centers the viewable area */
   border-radius: 8px; /* Arredonda as pontas para combinar com o seu layout */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
 }
 
-/* Mobile Screens (Small devices) */
-@media (max-width: 480px) {
-  .image-container {
-    height: 300px; /* Forces uniform height on mobile */
-  }
+/* --- Mobile Specific: Tall Images (Portrait) --- */
+@media (max-width: 767px) and (orientation: portrait) {
   .image-container img {
-    height: 100%; /* Forces image to fill the forced height */
+    max-height: 70vh; /* Limits tall images from filling the whole screen */
+    object-fit: contain; /* Keeps the entire image visible if preferred */
   }
 }
 
-/* Tablet Screens (Medium devices) */
-@media (min-width: 481px) and (max-width: 1024px) {
+/* --- Large PC Screens --- */
+@media (min-width: 1200px) {
   .image-container {
-    height: 450px;
+    max-width: 1200px; /* Limits container width on ultra-wide screens */
   }
+
   .image-container img {
-    height: 100%;
+    max-height: 600px; /* Prevents standard images from blowing up too big */
   }
 }
 
-/* Desktop Screens (Large devices) */
-@media (min-width: 1025px) {
-  /* Separates behavior based on image orientation if needed */
-  .image-container {
-    height: 100%;
-    display: block;
+/* --- Large PC Screens: Tall / Vertical Images --- */
+@media (min-width: 1200px) and (min-aspect-ratio: 4/3) {
+  /* Targets wide PC displays handling tall images side-by-side */
+  .tall-mode {
+    max-width: 500px;
   }
-  .image-container img {
-    height: 100%;
-    object-position: center; /* Keeps focal point in the middle */
+
+  .tall-mode img {
+    height: 80vh; /* Scales relative to screen height instead of width */
+    width: auto;
+    object-fit: contain;
   }
 }
 
