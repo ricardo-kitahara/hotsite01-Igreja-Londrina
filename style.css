@@ -270,7 +270,6 @@ li.no-bullet {
 .image-container {
   display: flex;
   flex-wrap: wrap;
-  gap: 16px;
   justify-content: center;
   width: 100%;
 }
@@ -289,11 +288,11 @@ img.large {
   max-width: 100%;
 }
 img.tall {
-  max-width: 250px; /* Limits tall images from stretching too much */
+  max-width: 350px; /* Limits tall images from stretching too much */
 }
 
 /* Tablet Screens */
-@media (min-width: 768px) {
+@media (min-width: 800px) {
   img.large {
     width: 60%;
   }
@@ -303,7 +302,7 @@ img.tall {
 }
 
 /* Desktop Screens */
-@media (min-width: 1024px) {
+@media (min-width: 1280px) {
   img.large {
     width: 50%;
   }
