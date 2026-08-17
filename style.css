@@ -292,20 +292,20 @@ li.no-bullet {
 
 /* Base styles for table cell container */
 td .image-container {
-  width: 100%;
+  width: 80%;
   display: block;
   overflow: hidden;
 }
 
 td .image-container img {
-  width: 100%;
+  width: 85%;
   height: 100%;
   object-fit: cover; /* Prevents distortion */
   display: block;
 }
 
 /* 📱 Smartphone Layout (Screens up to 767px) */
-@media (max-width: 639px) {
+@media (max-width: 480px) {
   td .image-container {
     height: 40vh; /* Takes 40% of mobile screen height */
     min-height: 250px; /* Ensures it stays tall on small phones */
@@ -313,7 +313,7 @@ td .image-container img {
 }
 
 /* 💻 Desktop Layout (Screens 768px and up) */
-@media (min-width: 640px) {
+@media (min-width: 481px) {
   td .image-container {
     height: 60vh; /* Takes 60% of desktop screen height */
     min-height: 450px; /* Ensures large presence on big screens */
