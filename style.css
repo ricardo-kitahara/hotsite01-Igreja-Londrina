@@ -263,30 +263,36 @@ li.no-bullet {
 /* For screens smaller than 768px (Phones) */
 
 /* Estilo para a imagem dentro dos cards */
-.imagem-container {
-  width: 85%; /* Image takes the full width of the mobile screen */
-  max-width: 250px; /* Impede que passe de 400px em celulares grandes */
-  height: auto; /* Mantém a proporção e não distorce a foto */
+/*.imagem-container {
+  width: 85%; /* Image takes the full width of the mobile screen *
+  max-width: 250px; /* Impede que passe de 400px em celulares grandes *
+  height: auto; /* Mantém a proporção e não distorce a foto *
   margin-bottom: 12px;
   display: flex;
   justify-content: flex-start;
-  object-fit: cover; /* Prevents distortion by cropping nicely */
+  object-fit: cover; /* Prevents distortion by cropping nicely *
+} */
+.imagem-container {
+  width: 100%;
+  max-width: 100px;
+  max-height: 650px;
 }
 
 .imagem-container img {
-  max-width: 85%; /* Garante que a foto nunca ultrapasse o limite do celular */
-  height: auto; /* Mantém a proporção da foto sem achatar */
+  max-inline-size: 100%; /* Garante que a foto nunca ultrapasse o limite do celular */
+  block-size: auto;
+  /*height: auto; Mantém a proporção da foto sem achatar*/
   border-radius: 8px; /* Arredonda as pontas para combinar com o seu layout */
   box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
 }
 
 /* --- 💻 PC / Desktop Screen Styles --- */
-/* For screens 1024px and wider */
-@media screen and (min-width: 1024px) {
+/* Para telas maiores que 768px (mais larga) */
+@media (min-width: 768px) {
   .imagem-container {
-    width: 75%;       /* Image takes up only half the screen on PC */
-    max-width: 600px; /* Define um limite máximo elegante para telas grandes */
-    object-fit: cover; /* Prevents distortion by cropping nicely */
+    /*width: 75%; Image takes up only half the screen on PC*/
+    max-width: 1024px; /* Define um limite máximo elegante para telas grandes */
+    /* object-fit: cover; Prevents distortion by cropping nicely */
   }
 }
 
