@@ -290,52 +290,40 @@ li.no-bullet {
 }
 */
 
-/* Base styles applied to all devices first */
+/* Base styles for the table cells and image container */
+td {
+  vertical-align: middle;
+}
+
 .image-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  overflow: hidden;
   width: 100%;
+  display: block;
+  overflow: hidden;
 }
 
 .image-container img {
   width: 100%;
-  height: auto;
-  object-fit: cover;
+  height: 100%;
+  object-fit: cover; /* Keeps image proportions without distorting */
+  display: block;
+  border-radius: 8px; /* Arredonda as pontas para combinar com o seu layout */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* Dá um leve destaque na foto */
 }
 
-/* 📱 SMARTPHONE STYLES (Small screens up to 768px) */
+/* 📱 Smartphone Layout (Screens up to 767px) */
 @media screen and (max-width: 768px) {
-  td {
-    padding: 8px; /* Compact padding for small screens */
-  }
-
   .image-container {
-    height: 150px; /* Shorter, mobile-friendly height */
+    height: 300px; /* Tall height for mobile */
     max-width: 100%;
   }
-
-  .image-container img {
-    /* Ensures image fills the smaller container without distortion */
-    height: 100%;
-  }
 }
 
-/* 💻 DESKTOP STYLES (Large, tall layouts from 769px and up) */
+/* 💻 Desktop Layout (Screens 768px and up) */
 @media screen and (min-width: 769px) {
-  td {
-    padding: 24px; /* Generous spacing for large displays */
-  }
-
   .image-container {
-    width: 100%;
-    max-width: 80%; /* Prevents the image from stretching too wide */
-    height: 50%;    /* Forces a large, tall portrait aspect ratio */
-  }
-
-  .image-container img {
-    height: 100%;    /* Fills the tall container completely */
+    height: 50%; /* Extra tall height for desktop */
+    max-width: 60%; /* Controls the large width on desktop */
+    margin: 0 auto; /* Centers the container inside the td */
   }
 }
 
