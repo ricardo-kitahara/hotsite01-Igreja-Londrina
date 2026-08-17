@@ -86,6 +86,14 @@ body {
   /*color: #84B067;*/
   background-color: #ecf9ef;
 }
+.accordion-header:active {
+  /*color: #84B067;*/
+  background-color: #ecf9ef;
+}
+.accordion-header:focus {
+  /*color: #84B067;*/
+  background-color: #ecf9ef;
+}
 .header {
   background-color: #ecf9ef;
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
