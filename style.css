@@ -76,13 +76,13 @@ body {
   align-items: center;
   color: #005C29;
   font-size: 1.2rem;
-  padding: 0 0 0 1rem;
+  padding: 0 0 0 0.5rem;
 }
 
 .accordion-header .icon {
   font-size: 1.5rem;
   font-weight: normal;
-  padding: 0 1rem 0 0;
+  padding: 0 0.5rem 0 0;
 }
 .accordion-header:hover {
   /*color: #84B067;*/
