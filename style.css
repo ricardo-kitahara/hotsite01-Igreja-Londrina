@@ -29,36 +29,36 @@ body {
   border-radius: 0 0 15px 15px;
   /*box-shadow: 0 4px 10px rgba(0,0,0,0.05);*/
 }
-
 #hero .logo {
   max-width: 240px;
   margin-bottom: 10px;
 }
-
 #hero h1 {
   font-size: 2rem;
   color: #005C29; /* Verde Institucional */
   margin-bottom: 10px;
 }
-
 #hero h2{
   font-size: 1.6rem;
   /*color: #84B067;*/
   color: #629045;
   margin-bottom: 10px;
 }
-
 #hero h3{
   font-size: 1.2rem;
   color: #84B067;
   margin-bottom: 10px;
 }
-
 #hero p {
   color: #555555;
   font-size: 1rem;
 }
 
+h2.box {
+  border-radius: 8px 8px 0 0;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.5);
+  padding: 0 0.75rem;
+}
 /* Cards de conteúdo */
 .card-resumo {
   background-color: #FFFFFF;
