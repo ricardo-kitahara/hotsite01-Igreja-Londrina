@@ -282,8 +282,12 @@ li.no-bullet {
   margin-left: 150px; /* Cria o espaço para os pontinhos aparecerem */
 }
 
-td{
+td {
   vertical-align: top;
+}
+.td-left {
+  display: flex;
+  margin: 0px 0px 0px -100px;
 }
 /* Base styles (Mobile First approach) *
 .image-container {
