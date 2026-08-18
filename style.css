@@ -287,9 +287,13 @@ li.no-bullet {
 td {
   vertical-align: top;
 }
-.td-left {
+.td-left-1 {
   display: flex;
   margin: 4rem 0 0 -5rem;
+}
+.td-left-2 {
+  display: flex;
+  margin: 4rem 0 0 -4rem;
 }
 /* Base styles (Mobile First approach) *
 .image-container {
