@@ -75,12 +75,14 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #005C29;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
+  padding-left: 1rem;
 }
 
 .accordion-header .icon {
-  font-size: 1.5rem;
+  font-size: 2.5rem;
   font-weight: normal;
+  padding-right: 1rem;
 }
 .accordion-header:hover {
   /*color: #84B067;*/
