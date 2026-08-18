@@ -12,7 +12,7 @@ body {
   line-height: 1.6;
   color: #333333;
   background-color: #F8F9FA;
-  padding: 20px;
+  padding: 10px;
 }
 /* 2. Smartphone styles */
 @media screen and (max-width: 767px) {
@@ -25,7 +25,7 @@ body {
   text-align: center;
   margin-bottom: 40px;
   background-color: #ffffff;
-  padding: 20px;
+  padding: 10px;
   border-radius: 0 0 15px 15px;
   /*box-shadow: 0 4px 10px rgba(0,0,0,0.05);*/
 }
@@ -62,7 +62,7 @@ body {
 /* Cards de conteúdo */
 .card-resumo {
   background-color: #FFFFFF;
-  padding: 18px;
+  padding: 10px;
   border-radius: 8px;
   margin-bottom: 15px;
   border-left: 5px solid #F3C300; /* Dourado */
@@ -75,14 +75,14 @@ body {
   justify-content: space-between;
   align-items: center;
   color: #005C29;
-  font-size: 1.25rem;
-  padding-left: 1rem;
+  font-size: 1.2rem;
+  padding: 0 0 0 1rem;
 }
 
 .accordion-header .icon {
-  font-size: 2.5rem;
+  font-size: 1.5rem;
   font-weight: normal;
-  padding-right: 1rem;
+  padding: 0 1rem 0 0;
 }
 .accordion-header:hover {
   /*color: #84B067;*/
