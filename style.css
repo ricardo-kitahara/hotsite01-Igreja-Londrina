@@ -289,11 +289,11 @@ td {
 }
 .td-left-1 {
   display: flex;
-  margin: 4rem 0 0 -5rem;
+  margin: 3rem 0 0 -5rem;
 }
 .td-left-2 {
   display: flex;
-  margin: 4rem 0 0 -4rem;
+  margin: 3rem 0 0 -4rem;
 }
 /* Base styles (Mobile First approach) *
 .image-container {
