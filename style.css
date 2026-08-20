@@ -301,6 +301,12 @@ footer {
   padding-left: 5px;
 }
 
+.line-h {
+  white-space: nowrap;       /* Prevents the phrase from breaking into multiple lines */
+  line-height: 2;            /* Collapses extra vertical space above/below the font */
+  margin: 0;                 /* Removes default browser spacing around text blocks */
+  display: inline-block;     /* Ensures layout properties apply predictably */
+}
 li.no-bullet {
   list-style: none;
 }
