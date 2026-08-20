@@ -15,11 +15,20 @@ body {
   padding: 10px;
 }
 /* 2. Smartphone styles */
-@media screen and (max-width: 767px) {
+@media screen and (max-width: 768px) {
   body {
     font-size: 14px;
   }
 }
+/* Telas maiores (computadores e tablets) */
+@media (min-width: 1025px) {
+  .texto-resumo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+  }
+}
+
 /* Estilos do Hero (Topo App) */
 #hero {
   text-align: center;
@@ -60,6 +69,42 @@ h2.box {
   padding: 0.15rem 0 0 0.75rem;
   background-color: #ecf9ef;
 }
+
+/* Step 1: Create a colorful gradient that loops seamlessly *
+.animated-gradient-text {
+  background: linear-gradient(
+    to right,
+    #ff7e5f,
+    #feb47b,
+    #8678f9,
+    #ff7e5f
+  );
+
+  /* Step 2: Make the background wider than the text element *
+  background-size: 200% auto;
+
+  /* Step 3: Clip the background strictly to the text shape *
+  background-clip: text;
+  -webkit-background-clip: text;
+
+  /* Step 4: Turn text transparent to reveal the background underneath *
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+
+  /* Step 5: Attach the keyframe animation *
+  animation: shift-gradient 4s linear infinite;
+}
+
+/* Step 6: Move the background position horizontally *
+@keyframes shift-gradient {
+  0% {
+    background-position: 0% center;
+  }
+  100% {
+    background-position: 200% center;
+  }
+}
+*/
 
 /* Cards de conteúdo */
 .card-resumo {
@@ -122,15 +167,6 @@ h2.box {
   border-top: 1px solid #E0E0E0;
 }
 
-/* Telas maiores (computadores e tablets) */
-@media (min-width: 1681px) {
-  .texto-resumo {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 20px;
-  }
-}
-
 /* Seção Final e CTA */
 #cta {
   text-align: center;
@@ -177,7 +213,7 @@ footer {
 /* Card de Unidades */
 .unidades-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: repeat(2, 1fr);
   gap: 10px;
 }
 
