@@ -67,44 +67,50 @@ h2.box {
   border-radius: 8px 8px 0 0;
   box-shadow: 0 2px 8px rgba(0,0,0,0.5);
   padding: 0.15rem 0 0 0.75rem;
-  background-color: #ecf9ef;
+  /*background-color: #ecf9ef;*/
 }
 
-/* Step 1: Create a colorful gradient that loops seamlessly *
-.animated-gradient-text {
+/* Step 1: Create a colorful gradient that loops seamlessly */
+/*.animated-gradient-text {*/
+.gradient {
   background: linear-gradient(
-    to right,
-    #ff7e5f,
-    #feb47b,
-    #8678f9,
-    #ff7e5f
+    to left,
+    /*#ffffff,*/
+    #ecf9ef,
+    #84B067,
+    #629045,
+    #005C29,
+    #005C29,
+    #629045,
+    #84B067,
+    #ecf9ef
   );
 
-  /* Step 2: Make the background wider than the text element *
+  /* Step 2: Make the background wider than the text element */
   background-size: 200% auto;
 
-  /* Step 3: Clip the background strictly to the text shape *
+  /* Step 3: Clip the background strictly to the text shape */
   background-clip: text;
   -webkit-background-clip: text;
 
-  /* Step 4: Turn text transparent to reveal the background underneath *
+  /* Step 4: Turn text transparent to reveal the background underneath */
   color: transparent;
   -webkit-text-fill-color: transparent;
 
-  /* Step 5: Attach the keyframe animation *
-  animation: shift-gradient 4s linear infinite;
+  /* Step 5: Attach the keyframe animation */
+  animation: shift-gradient 8s linear infinite;
 }
 
-/* Step 6: Move the background position horizontally *
+/* Step 6: Move the background position horizontally */
 @keyframes shift-gradient {
-  0% {
-    background-position: 0% center;
-  }
   100% {
+    background-position: 25% center;
+  }
+  0% {
     background-position: 200% center;
   }
 }
-*/
+
 
 /* Cards de conteúdo */
 .card-resumo {
@@ -301,12 +307,6 @@ footer {
   padding-left: 5px;
 }
 
-.line-h {
-  white-space: nowrap;       /* Prevents the phrase from breaking into multiple lines */
-  line-height: 2;            /* Collapses extra vertical space above/below the font */
-  margin: 0;                 /* Removes default browser spacing around text blocks */
-  display: inline-block;     /* Ensures layout properties apply predictably */
-}
 li.no-bullet {
   list-style: none;
 }
