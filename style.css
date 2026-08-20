@@ -21,7 +21,7 @@ body {
   }
 }
 /* Telas maiores (computadores e tablets) */
-@media (min-width: 1025px) {
+@media (min-width: 769px) {
   .texto-resumo {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
